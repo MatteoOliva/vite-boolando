@@ -10,7 +10,7 @@ export default {};
       <!--header-center-->
       <div class="header-center">
         <img
-          src="./img/boolean-logo.png"
+          src="../assets/img/boolean-logo.png"
           alt="logo"
           width="130px"
           height="40px"
@@ -18,9 +18,9 @@ export default {};
       </div>
       <!--header-right-->
       <div class="header-right">
-        <!-- <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-user"></i>
         <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-bag-shopping"></i> -->
+        <i class="fa-solid fa-bag-shopping"></i>
       </div>
     </header>
 
@@ -39,6 +39,9 @@ header {
 
   .header-left, .header-right {
     color: white;
+  }
+  .header-right i {
+    padding: 5px;
   }
 }
 
