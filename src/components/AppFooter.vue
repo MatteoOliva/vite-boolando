@@ -27,8 +27,7 @@ footer {
   height: 90px;
   background-color: #1a1a1a;
   margin-top: 100px;
-  position: fixed;
-  bottom: 0;
+  
   color: white;
   display: flex;
   justify-content: space-between;
