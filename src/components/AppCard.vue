@@ -58,5 +58,23 @@ export default {};
         color: $primary-color;
     }
   }
+  .img-content {
+  position: absolute;
+  top: 76%;
+  width: 150px;
+  height: 30px;
 }
+.red-font {
+  color: red;
+}
+.red-fontt {
+  color: white;
+  background-color: red;
+}
+.green-font {
+  color: white;
+  align-items: center;
+  background-color: green;
+}
+
 </style>
