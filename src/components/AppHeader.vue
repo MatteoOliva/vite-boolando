@@ -28,11 +28,12 @@ export default {};
 
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as *;
 
 header {
   width: 100%;
   height: 70px;
-  background-color: #ff6900;
+  background-color: $header-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
