@@ -7,6 +7,7 @@ export default {};
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variables.scss' as *;
 // .card {
 //   width: 400px;
 //   height: 200px;
@@ -52,6 +53,10 @@ export default {};
     line-height: 45px;
     text-align: center;
     background-color: white;
+    
+    &:hover {
+        color: $primary-color;
+    }
   }
 }
 </style>
