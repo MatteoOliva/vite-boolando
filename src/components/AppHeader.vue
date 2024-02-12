@@ -36,6 +36,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  top: 0;
 
   .header-left, .header-right {
     color: white;
