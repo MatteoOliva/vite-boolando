@@ -26,6 +26,24 @@ export default {};
     width: calc(100% / 3);
     flex-grow: 1;
     padding: 10px;
+    
+    img {
+        width: 100%;
+    }
+
+    .back-img {
+        display: none;
+    }
+    
   }
-}
+  .card:hover {
+    .front-img {
+        display: none;
+    }
+    .back-img {
+        display: block;
+    }
+    }
+  }
+
 </style>

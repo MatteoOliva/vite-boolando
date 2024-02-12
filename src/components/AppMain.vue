@@ -123,7 +123,7 @@ export default {
     <div class="container">
       <div class="card" v-for="(product, index) in products">
         <img :src="buildImagePath(product.frontImage)" class="front-img" alt="foto-modello" />
-        <img src="" class="back-img" alt="1b" />
+        <img :src="buildImagePath(product.backImage)" class="back-img" alt="foto-modello" />       
         <div class="wishlist">
           <i class="fa-solid fa-heart"></i>
         </div>
