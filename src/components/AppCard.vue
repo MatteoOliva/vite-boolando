@@ -3,7 +3,7 @@ export default {};
 </script>
 
 <template>
-    <!-- <div class="card"><img src="../assets/img/1.webp" alt="" /></div> -->
+  <!-- <div class="card"><img src="../assets/img/1.webp" alt="" /></div> -->
 </template>
 
 <style lang="scss">
@@ -26,24 +26,32 @@ export default {};
     width: calc(100% / 3);
     flex-grow: 1;
     padding: 10px;
-    
+
     img {
-        width: 100%;
+      width: 100%;
     }
 
     .back-img {
-        display: none;
+      display: none;
     }
-    
   }
   .card:hover {
     .front-img {
-        display: none;
+      display: none;
     }
     .back-img {
-        display: block;
-    }
+      display: block;
     }
   }
-
+  .wishlist {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: white;
+  }
+}
 </style>
