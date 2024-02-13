@@ -9,7 +9,7 @@ export default {
           backImage: "1b.webp",
           brand: "Levi's",
           name: "Relaxed Fit",
-          price: 29.99,
+          price: 14.99,
           isInFavorites: true,
           badges: [
             {
@@ -125,6 +125,14 @@ export default {
     buildImagePath(imageName) {
         return new URL('../assets/img/' + imageName, import.meta.url).href;
     },
+
+    division(a, b) {
+     const quotient = a / b;
+     
+     return quotient.toFixed(2)
+    },
+
+
   },
 
 };
@@ -142,7 +150,6 @@ export default {
         <div class="img-content">
           <span class="red-fontt" v-show="product.badges[1].value === '-50%' " > &nbsp; {{ product.badges[1].value}} &nbsp; </span>  
           <span class="red-fontt" v-show="product.badges[0].value === '-30%' " > &nbsp; {{ product.badges[0].value}} &nbsp; </span>        
-
           <span class="green-font" v-show="product.badges[0].value === 'Sostenibilità' "> &nbsp; {{ product.badges[0].value}} &nbsp;</span>
         </div>
 
@@ -152,7 +159,8 @@ export default {
           <p>
             <span class="red-font">{{ product.price }}</span>
             &nbsp;
-            <span style="text-decoration: line-through">29,99€</span>
+            <span style="text-decoration: line-through" v-show="product.badges[1].value === '-50%' " > {{ division(product.price, 0.5) }}</span>
+            <span style="text-decoration: line-through" v-show="product.badges[0].value === '-30%' " > {{ division(product.price, 0.7) }}</span>
           </p>
         </div>
       </div>

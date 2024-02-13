@@ -9,7 +9,7 @@ import AppCard from './components/AppCard.vue';
 export default {
   data() {
     return {
-      title:'La Molisana',
+      title:'Boolando',
     };
   },
 
