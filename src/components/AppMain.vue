@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
   data() {
     return {
@@ -121,6 +123,12 @@ export default {
     };
   },
 
+  created() {
+axios.get('http://localhost:3000/products').then((res) => {
+  this.products = res.data;
+});
+  },
+
   methods: {
     buildImagePath(imageName) {
         return new URL('../assets/img/' + imageName, import.meta.url).href;
@@ -131,8 +139,6 @@ export default {
      
      return quotient.toFixed(2)
     },
-
-
   },
 
 };
