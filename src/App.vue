@@ -1,8 +1,10 @@
 <script>
+import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppCard from './components/AppCard.vue';
+import {store} from './store'
 
 
 
@@ -10,11 +12,18 @@ import AppCard from './components/AppCard.vue';
 export default {
   data() {
     return {
-      title:'Boolando',
+      store: store,
+      products: []
     };
   },
 
   components: { AppHeader, AppMain, AppFooter, AppCard },
+
+  created() {
+    axios.get('http://localhost:3000/products').then((res) => {
+      this.products = res.data;
+});
+  },
 };
 
 </script>
@@ -22,7 +31,7 @@ export default {
 <template>
   
   <AppHeader></AppHeader>
-  <AppMain></AppMain>
+  <AppMain :products="products"></AppMain>
   <AppFooter></AppFooter>
   <AppCard></AppCard>
   
