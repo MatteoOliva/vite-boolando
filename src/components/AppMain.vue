@@ -35,6 +35,10 @@ export default {
               type: "discount",
               value: "-30%",
             },
+            {
+              type: "",
+              value: "",
+            },
           ],
         },
         {
@@ -49,6 +53,10 @@ export default {
             {
               type: "discount",
               value: "-30%",
+            },
+            {
+              type: "",
+              value: "",
             },
           ],
         },
@@ -103,6 +111,10 @@ export default {
               type: "tag",
               value: "Sostenibilità",
             },
+            {
+              type: "",
+              value: "",
+            },
           ],
         },
       ],
@@ -128,7 +140,8 @@ export default {
           <i class="fa-solid fa-heart"></i>
         </div>
         <div class="img-content">
-          <span class="red-fontt"> &nbsp;-50% &nbsp;</span>
+          <span class="red-fontt" v-show="product.badges[1].value === '-50%' " > &nbsp; {{ product.badges[1].value}} &nbsp; </span>  
+          <span class="red-fontt" v-show="product.badges[0].value === '-30%' " > &nbsp; {{ product.badges[0].value}} &nbsp; </span>        
 
           <span class="green-font" v-show="product.badges[0].value === 'Sostenibilità' "> &nbsp; {{ product.badges[0].value}} &nbsp;</span>
         </div>
