@@ -130,7 +130,7 @@ export default {
         <div class="img-content">
           <span class="red-fontt"> &nbsp;-50% &nbsp;</span>
 
-          <span class="green-font" v-show="product.badges[1]"> &nbsp; {{ product.badges[1]}} &nbsp;</span>
+          <span class="green-font" v-show="product.badges[0].value === 'Sostenibilità' "> &nbsp; {{ product.badges[0].value}} &nbsp;</span>
         </div>
 
         <div class="descrizione">
