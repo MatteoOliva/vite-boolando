@@ -65,16 +65,16 @@ export default {};
   height: 30px;
 }
 .red-font {
-  color: red;
+  color: $primary-color;
 }
 .red-fontt {
   color: white;
-  background-color: red;
+  background-color: $primary-color;
 }
 .green-font {
   color: white;
   align-items: center;
-  background-color: green;
+  background-color: $secondary-color;
 }
-
+}
 </style>

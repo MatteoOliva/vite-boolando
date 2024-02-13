@@ -130,14 +130,14 @@ export default {
         <div class="img-content">
           <span class="red-fontt"> &nbsp;-50% &nbsp;</span>
 
-          <span class="green-font"> &nbsp; Sostenibilita &nbsp;</span>
+          <span class="green-font" v-show="product.badges[1]"> &nbsp; {{ product.badges[1]}} &nbsp;</span>
         </div>
 
         <div class="descrizione">
           <p>Levi's</p>
           <h3>RELAXED FIT TEE UNISEX</h3>
           <p>
-            <span class="red-font">14,99€</span>
+            <span class="red-font">{{ product.price }}</span>
             &nbsp;
             <span style="text-decoration: line-through">29,99€</span>
           </p>
