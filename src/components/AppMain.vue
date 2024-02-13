@@ -154,8 +154,8 @@ export default {
         </div>
 
         <div class="descrizione">
-          <p>Levi's</p>
-          <h3>RELAXED FIT TEE UNISEX</h3>
+          <p>{{product.brand}}</p>
+          <h3>{{ product.name }}</h3>
           <p>
             <span class="red-font">{{ product.price }}</span>
             &nbsp;
